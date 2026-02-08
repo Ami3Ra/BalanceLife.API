@@ -1,4 +1,7 @@
 
+using BalanceLife.Persistence.Data.DbContexts;
+using Microsoft.EntityFrameworkCore;
+
 namespace BalanceLIfe.API
 {
     public class Program
@@ -7,12 +10,19 @@ namespace BalanceLIfe.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            #region Register DI Container
             // Add services to the container.
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen(); 
+
+            builder.Services.AddDbContext<BalanceDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+            #endregion
 
             var app = builder.Build();
 
