@@ -1,0 +1,58 @@
+[
+  {
+     "Name":"Zooba",
+     "Rating":4.6,
+     "Latitude":30.0561,
+     "Longitude":31.3444,
+     "ImageUrl":"images/restaurants/Zoob.jfif"
+  },
+    {
+     "Name":"Pizza Hut",
+     "Rating":4.2,
+     "Latitude":30.0554,
+     "Longitude":31.3451,
+     "ImageUrl":"images/restaurants/PizzaHut.jfif"
+  },
+    {
+     "Name":"KFC",
+     "Rating":4.0,
+     "Latitude":30.0548,
+     "Longitude":31.3432,
+     "ImageUrl":"images/restaurants/KFC.jfif"
+  },
+    {
+     "Name":"Heart Attack Grill",
+     "Rating":4.4,
+     "Latitude":30.0570,
+     "Longitude":31.3420,
+     "ImageUrl":"images/restaurants/HeartAttackGrill.jfif"
+  },
+    {
+     "Name":"Healthy & Tasty",
+     "Rating":4.8,
+     "Latitude":30.0582,
+     "Longitude":31.3460,
+     "ImageUrl":"images/restaurants/HealthyAndTesty.jfif"
+  },
+   {
+     "Name":"El Dahan Grill",
+     "Rating":4.3,
+     "Latitude":30.0539,
+     "Longitude":31.3418,
+     "ImageUrl":"images/restaurants/ElDahan.jfif"
+  },
+   {
+     "Name":"Burger Factory",
+     "Rating":4.1,
+     "Latitude":30.0569,
+     "Longitude":31.3473,
+     "ImageUrl":"images/restaurants/Burger.jfif"
+  },
+   {
+     "Name":"Green Bowl",
+     "Rating":4.7,
+     "Latitude":30.0578,
+     "Longitude":31.3449,
+     "ImageUrl":"images/restaurants/GreenBowl.jfif"
+  }
+]
