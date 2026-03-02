@@ -1,0 +1,273 @@
+[
+ {
+   "Name":"Grilled Chicken Breast",
+   "Calories":220, 
+   "Protein":40, 
+   "Carbs":0, 
+   "Fats":5, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/download.jfif"
+ },
+ {
+   "Name":"Salmon with Vegetables",
+   "Calories":350, 
+   "Protein":34, 
+   "Carbs":8, 
+   "Fats":18, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/SalmonwithVegetables.jfif"
+ },
+ {
+   "Name":"Avocado Toast",
+   "Calories":280, 
+   "Protein":8, 
+   "Carbs":30, 
+   "Fats":14, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/AvocadoToast.jfif"
+ },
+ {
+   "Name":"Oatmeal with Fruits",
+   "Calories":260, 
+   "Protein":9, 
+   "Carbs":45, 
+   "Fats":6, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/OatmealwithFruits.jfif"
+ },
+ {
+   "Name":"Greek Yogurt with Honey",
+   "Calories":190, 
+   "Protein":15, 
+   "Carbs":20, 
+   "Fats":4, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/GreekYogurtwithHoney.jfif"
+ },
+ {
+   "Name":"Tuna Salad",
+   "Calories":300, 
+   "Protein":35, 
+   "Carbs":10, 
+   "Fats":9, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/TunaSalad.jfif"
+ },
+ {
+   "Name":"Grilled Turkey Sandwich",
+   "Calories":330, 
+   "Protein":28, 
+   "Carbs":32, 
+   "Fats":7, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/GrilledTurkeySandwich.jfif"
+ },
+ {
+   "Name":"Quinoa Bowl",
+   "Calories":340, 
+   "Protein":14, 
+   "Carbs":45, 
+   "Fats":10, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/QuinoaBowl.jfif"
+ },
+ {
+   "Name":"Egg White Omelette",
+   "Calories":180, 
+   "Protein":22, 
+   "Carbs":3, 
+   "Fats":4, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/EggWhiteOmelette.jfif"
+ },
+ {
+   "Name":"Grilled Shrimp",
+   "Calories":210, 
+   "Protein":32, 
+   "Carbs":2, 
+   "Fats":3, 
+   "IsRecommended":false,
+   "PictureUrl":"/images/meals/GrilledShrimp.jfif"
+ },
+ {
+   "Name":"Lentil Soup",
+   "Calories":250, 
+   "Protein":18, 
+   "Carbs":35, 
+   "Fats":4, 
+   "IsRecommended":false,
+   "PictureUrl":"/images/meals/LentilSoup.jfif"
+ },
+ {
+   "Name":"Chicken Caesar Salad",
+   "Calories":320, 
+   "Protein":30, 
+   "Carbs":12, 
+   "Fats":14, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/ChickenCaesarSalad.jfif"
+ },
+ {
+   "Name":"Brown Rice & Veggies",
+   "Calories":310, 
+   "Protein":10, 
+   "Carbs":55, 
+   "Fats":5, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/BrownRiceVeggies.jfif"
+ },
+ {
+   "Name":"Grilled Fish Fillet",
+   "Calories":240, 
+   "Protein":36, 
+   "Carbs":0, 
+   "Fats":6, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/GrilledFishFillet.jfif"
+ },
+ {
+   "Name":"Protein Pancakes",
+   "Calories":290, 
+   "Protein":22, 
+   "Carbs":30, 
+   "Fats":6, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/ProteinPancakes.jfif"
+ },
+ {
+   "Name":"Vegetable Stir Fry",
+   "Calories":270, 
+   "Protein":12, 
+   "Carbs":35, 
+   "Fats":9, 
+   "IsRecommended":false,
+   "PictureUrl":"/images/meals/VegetableStirFry.jfif"
+ },
+ {
+   "Name":"Boiled Eggs & Toast",
+   "Calories":260, 
+   "Protein":18, 
+   "Carbs":20, 
+   "Fats":10, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/BoiledEggsToast.jfif"
+ },
+ {
+   "Name":"Smoothie Bowl",
+   "Calories":300, 
+   "Protein":15, 
+   "Carbs":45, 
+   "Fats":8, 
+   "IsRecommended":false,
+   "PictureUrl":"/images/meals/SmoothieBowl.jfif"
+ },
+ {
+   "Name":"Cheeseburger",
+   "Calories":550, 
+   "Protein":28, 
+   "Carbs":45, 
+   "Fats":30, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/Cheeseburger.jfif"
+ }, 
+ {
+   "Name":"Pepperoni Pizza",
+   "Calories":620, 
+   "Protein":25, 
+   "Carbs":60, 
+   "Fats":32, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/PepperoniPizza.jfif"
+ },
+ {
+   "Name":"Fried Chicken",
+   "Calories":580, 
+   "Protein":32, 
+   "Carbs":20, 
+   "Fats":35, 
+   "IsRecommended":false,
+   "PictureUrl":"/images/meals/FriedChicken.jfif"
+ },
+ {
+   "Name":"French Fries",
+   "Calories":420, 
+   "Protein":6, 
+   "Carbs":50, 
+   "Fats":22, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/FrenchFries.jfif"
+ },
+ {
+   "Name":"Hot Dog",
+   "Calories":480, 
+   "Protein":20, 
+   "Carbs":30, 
+   "Fats":28, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/HotDog.jfif"
+ },
+ {
+   "Name":"Fried Rice",
+   "Calories":530, 
+   "Protein":14, 
+   "Carbs":65, 
+   "Fats":24, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/FriedRice.jfif"
+ },
+ {
+   "Name":"Chicken Shawarma",
+   "Calories":600, 
+   "Protein":35, 
+   "Carbs":55, 
+   "Fats":30, 
+   "IsRecommended":true,
+   "PictureUrl":"images/meals/ChickenShawarma.jfif"
+ },
+  {
+   "Name":"Pasta Alfredo",
+   "Calories":670, 
+   "Protein":20, 
+   "Carbs":70, 
+   "Fats":36, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/PastaAlfredo.jfif"
+ },
+  {
+   "Name":"Fried Fish & Chips",
+   "Calories":650, 
+   "Protein":30, 
+   "Carbs":60, 
+   "Fats":34, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/FriedFishChips.jfif"
+ },
+  {
+   "Name":"Chocolate Pancakes",
+   "Calories":520, 
+   "Protein":10, 
+   "Carbs":60, 
+   "Fats":25, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/ChocolatePancakes.jfif"
+ },
+  {
+   "Name":"Donuts",
+   "Calories":450, 
+   "Protein":6, 
+   "Carbs":55, 
+   "Fats":24, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/Donuts.jfif"
+ },
+  {
+   "Name":"Ice Cream Sundae",
+   "Calories":500, 
+   "Protein":8, 
+   "Carbs":60, 
+   "Fats":26, 
+   "IsRecommended":false,
+   "PictureUrl":"images/meals/IceCreamSundae.jfif"
+ }
+
+]
