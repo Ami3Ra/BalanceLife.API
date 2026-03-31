@@ -62,6 +62,16 @@ namespace BalanceLIfe.API
                 options.InvalidModelStateResponseFactory = ApiResponseFactory.GenerateApiValidationResponse;
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("DevelopmentPolicy", builder =>
+                {
+                    builder.AllowAnyHeader()
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod();
+                });
+            });
+
 
             builder.Services.AddDbContext<BalanceIdentityDbContext> (Options =>
             {
@@ -85,6 +95,7 @@ namespace BalanceLIfe.API
             }).AddJwtBearer(options =>
             {
                 options.SaveToken = true;
+                options.RequireHttpsMetadata = false;
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
                     ValidateIssuer = true,
@@ -94,6 +105,7 @@ namespace BalanceLIfe.API
                     ValidAudience = builder.Configuration["JWTOptions:Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(builder.Configuration["JWTOptions:SecretKey"]!)),
+
                 };
             });
 
@@ -112,15 +124,16 @@ namespace BalanceLIfe.API
             // Configure the HTTP request pipeline.
 
             app.UseMiddleware<ExceptionHandlerMiddleware>();
-            if (app.Environment.IsDevelopment())
-            {
+            //if (app.Environment.IsDevelopment())
+            //{
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            //}
 
             app.UseStaticFiles();
-            app.UseHttpsRedirection();
-            app.UseHsts();
+            //app.UseHttpsRedirection();
+            app.UseCors("DevelopmentPolicy");
+            //app.UseHsts();
 
             app.UseAuthentication();
             app.UseAuthorization();
