@@ -47,34 +47,35 @@ namespace BalanceLife.Persistence.Data.DataSed
             }
         }
 
-        private async Task SeedDataFromJson<T,TKey>(string fileName,DbSet<T> dbset) where T : BaseEntity<TKey>
+        private async Task SeedDataFromJson<T, TKey>(string fileName, DbSet<T> dbset) where T : BaseEntity<TKey>
         {
-            // D:\Back End\Assignment\Graduation Project\BalanceLIfe\BalanceLife.Persistence\Data\DataSeed\JsonFiles\meals.json
-            var filePath = @"..\BalanceLife.Persistence\Data\DataSeed\JsonFiles\" + fileName;
-       
-            if(!File.Exists(filePath))
-                throw new FileNotFoundException("Json file not found",filePath);
+            var basePath = AppDomain.CurrentDomain.BaseDirectory;
+
+            var filePath = Path.Combine(basePath, "Data", "DataSeed", "JsonFiles", fileName);
+
+            if (!File.Exists(filePath))
+                throw new FileNotFoundException($"Json file not found at: {filePath}", filePath);
 
             try
             {
-                //var data = File.ReadAllText(filePath);
-                var dataStream = File.OpenRead(filePath);
+                using var dataStream = File.OpenRead(filePath);
 
                 var data = await JsonSerializer.DeserializeAsync<List<T>>(dataStream, new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
                 });
 
-                if(data is not null)
+                if (data is not null && data.Any())
                 {
-                  await  dbset.AddRangeAsync(data);
+                    await dbset.AddRangeAsync(data);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error While reading data from Json {ex}");
+                Console.WriteLine($"Error While reading data from Json: {ex.Message}");
             }
-        
         }
+
+
     }
 }

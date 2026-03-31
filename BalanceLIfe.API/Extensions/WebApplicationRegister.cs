@@ -16,7 +16,7 @@ namespace BalanceLIfe.API.Extensions
 
             if (pendingdMigrations.Any())
             {
-                dbContext.Database.Migrate();
+                await dbContext.Database.MigrateAsync();
             }
             return app;
         }
@@ -30,7 +30,7 @@ namespace BalanceLIfe.API.Extensions
 
             if (pendingdMigrations.Any())
             {
-                dbContext.Database.Migrate();
+                await dbContext.Database.MigrateAsync();
             }
             return app;
         }
