@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BalanceLife.Domain\BalanceLife.Domain.csproj" />
     <ProjectReference Include="..\BalanceLife.Shared\BalanceLife.Shared.csproj" />
   </ItemGroup>
 

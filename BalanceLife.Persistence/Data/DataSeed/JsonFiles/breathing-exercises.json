@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Box Breathing",
+        "duration": 5,
+        "pattern": "4-4-4-4",
+        "description": "Inhale 4s ? Hold 4s ? Exhale 4s ? Hold 4s",
+        "benefit": "Reduces stress and improves focus"
+    },
+    {
+        "name": "4-7-8 Breathing",
+        "duration": 3,
+        "pattern": "4-7-8",
+        "description": "Inhale 4s ? Hold 7s ? Exhale 8s",
+        "benefit": "Promotes relaxation and better sleep"
+    },
+    {
+        "name": "Deep Breathing",
+        "duration": 5,
+        "pattern": "slow",
+        "description": "Slow deep breaths for 5 minutes",
+        "benefit": "Calms the nervous system"
+    }
+]

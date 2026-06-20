@@ -45,6 +45,13 @@ namespace BalanceLIfe.API
             builder.Services.AddAutoMapper(typeof(ServiceAssemblyReference).Assembly);
 
             builder.Services.AddScoped<IMealService, MealService>();
+            builder.Services.AddScoped<IWaterService, WaterService>();
+            builder.Services.AddScoped<IWorkoutService, WorkoutService>();
+            builder.Services.AddScoped<IActivityService, ActivityService>();
+            builder.Services.AddScoped<IStepsService, StepsService>();
+            builder.Services.AddScoped<ICaffeineService, CaffeineService>();
+            builder.Services.AddScoped<IWorkoutVideoService, WorkoutVideoService>();
+            builder.Services.AddScoped<IBreathingExerciseService, BreathingExerciseService>();
             //builder.Services.AddTransient<MealPictureUrlResolver>();
             //builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
             //{

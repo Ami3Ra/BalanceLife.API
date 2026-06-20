@@ -1,0 +1,86 @@
+[
+    {
+        "Name": "HIIT Training",
+        "Category": "Cardio",
+        "Level": "Advanced",
+        "DurationInMinutes": 25,
+        "Calories": 320
+    },
+    {
+        "Name": "Running",
+        "Category": "Cardio",
+        "Level": "Intermediate",
+        "DurationInMinutes": 30,
+        "Calories": 300
+    },
+    {
+        "Name": "Jump Rope",
+        "Category": "Cardio",
+        "Level": "Beginner",
+        "DurationInMinutes": 15,
+        "Calories": 200
+    },
+    {
+        "Name": "Full Body Workout",
+        "Category": "Strength",
+        "Level": "Intermediate",
+        "DurationInMinutes": 45,
+        "Calories": 280
+    },
+    {
+        "Name": "Upper Body",
+        "Category": "Strength",
+        "Level": "Beginner",
+        "DurationInMinutes": 30,
+        "Calories": 200
+    },
+    {
+        "Name": "Lower Body",
+        "Category": "Strength",
+        "Level": "Intermediate",
+        "DurationInMinutes": 35,
+        "Calories": 240
+    },
+    {
+        "Name": "Yoga Flow",
+        "Category": "Flexibility",
+        "Level": "Beginner",
+        "DurationInMinutes": 30,
+        "Calories": 100
+    },
+    {
+        "Name": "Stretching Routine",
+        "Category": "Flexibility",
+        "Level": "Beginner",
+        "DurationInMinutes": 20,
+        "Calories": 60
+    },
+    {
+        "Name": "Pilates",
+        "Category": "Flexibility",
+        "Level": "Intermediate",
+        "DurationInMinutes": 40,
+        "Calories": 150
+    },
+    {
+        "Name": "Bodyweight Circuit",
+        "Category": "Home",
+        "Level": "Beginner",
+        "DurationInMinutes": 20,
+        "Calories": 180
+    },
+    {
+        "Name": "Core Blast",
+        "Category": "Home",
+        "Level": "Intermediate",
+        "DurationInMinutes": 15,
+        "Calories": 120
+    },
+    {
+        "Name": "No Equipment Full Body",
+        "Category": "Home",
+        "Level": "Beginner",
+        "DurationInMinutes": 30,
+        "Calories": 220
+    }
+]

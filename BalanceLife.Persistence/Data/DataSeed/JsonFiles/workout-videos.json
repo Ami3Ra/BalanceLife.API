@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Fat Burning HIIT",
+        "trainer": "Sarah Johnson",
+        "duration": 25,
+        "calories": 320,
+        "level": "Intermediate",
+        "icon": "🔥",
+        "videoUrl": "https://www.youtube.com/watch?v=ml6cT4AZdqI"
+    },
+    {
+        "title": "Full Body Strength",
+        "trainer": "Mike Ross",
+        "duration": 40,
+        "calories": 280,
+        "level": "Advanced",
+        "icon": "💪",
+        "videoUrl": "https://www.youtube.com/watch?v=UoC_O3HzsH0"
+    },
+    {
+        "title": "Walking Workout",
+        "trainer": "Emma Davis",
+        "duration": 30,
+        "calories": 150,
+        "level": "Beginner",
+        "icon": "🚶",
+        "videoUrl": "https://www.youtube.com/watch?v=enYITYwvPAQ"
+    },
+    {
+        "title": "Yoga Flow",
+        "trainer": "Anna Chen",
+        "duration": 20,
+        "calories": 100,
+        "level": "Beginner",
+        "icon": "🎯",
+        "videoUrl": "https://www.youtube.com/watch?v=v7AYKMP6rOE"
+    },
+    {
+        "title": "Core & Abs Blaster",
+        "trainer": "Tom Wilson",
+        "duration": 15,
+        "calories": 180,
+        "level": "Intermediate",
+        "icon": "🔥",
+        "videoUrl": "https://www.youtube.com/watch?v=AnYl6Nk9GOA"
+    },
+    {
+        "title": "Cardio Dance Party",
+        "trainer": "Lisa Park",
+        "duration": 35,
+        "calories": 250,
+        "level": "Beginner",
+        "icon": "💪",
+        "videoUrl": "https://www.youtube.com/watch?v=ZWk19OVon2k"
+    },
+    {
+        "title": "Morning Stretch Routine",
+        "trainer": "Olivia Brown",
+        "duration": 15,
+        "calories": 70,
+        "level": "Beginner",
+        "icon": "🚶",
+        "videoUrl": "https://www.youtube.com/watch?v=4BOTvaRaDjI"
+    },
+    {
+        "title": "Advanced HIIT Burn",
+        "trainer": "Chris Evans",
+        "duration": 30,
+        "calories": 350,
+        "level": "Advanced",
+        "icon": "🎯",
+        "videoUrl": "https://www.youtube.com/watch?v=UBMk30rjy0o"
+    },
+    {
+        "title": "Upper Body Strength",
+        "trainer": "David Lee",
+        "duration": 30,
+        "calories": 220,
+        "level": "Intermediate",
+        "icon": "🔥",
+        "videoUrl": "https://www.youtube.com/watch?v=IODxDxX7oi4"
+    },
+    {
+        "title": "Lower Body Workout",
+        "trainer": "Sophia White",
+        "duration": 35,
+        "calories": 240,
+        "level": "Intermediate",
+        "icon": "💪",
+        "videoUrl": "https://www.youtube.com/watch?v=2SHsk9AzdjA"
+    },
+    {
+        "title": "Pilates Core",
+        "trainer": "Emily Clark",
+        "duration": 25,
+        "calories": 140,
+        "level": "Beginner",
+        "icon": "🚶",
+        "videoUrl": "https://www.youtube.com/watch?v=lCg_gh_fppI"
+    },
+    {
+        "title": "Full Body Home Workout",
+        "trainer": "Daniel Green",
+        "duration": 45,
+        "calories": 300,
+        "level": "Advanced",
+        "icon": "🎯",
+        "videoUrl": "https://www.youtube.com/watch?v=1f8yoFFdkcY"
+    },
+    {
+        "title": "Quick 10 Min Cardio",
+        "trainer": "Ava Taylor",
+        "duration": 10,
+        "calories": 100,
+        "level": "Beginner",
+        "icon": "🔥",
+        "videoUrl": "https://www.youtube.com/watch?v=ml6cT4AZdqI"
+    },
+    {
+        "title": "Abs Workout at Home",
+        "trainer": "James Scott",
+        "duration": 20,
+        "calories": 200,
+        "level": "Intermediate",
+        "icon": "💪",
+        "videoUrl": "https://www.youtube.com/watch?v=1919eTCoESo"
+    },
+    {
+        "title": "Relaxing Evening Yoga",
+        "trainer": "Grace Kim",
+        "duration": 30,
+        "calories": 90,
+        "level": "Beginner",
+        "icon": "🚶",
+        "videoUrl": "https://www.youtube.com/watch?v=4pKly2JojMw"
+    },
+    {
+        "title": "Jump Rope Cardio",
+        "trainer": "Ryan Adams",
+        "duration": 20,
+        "calories": 260,
+        "level": "Intermediate",
+        "icon": "🎯",
+        "videoUrl": "https://www.youtube.com/watch?v=1BZM3K9V3nE"
+    },
+    {
+        "title": "Mobility & Flexibility",
+        "trainer": "Hannah Lee",
+        "duration": 25,
+        "calories": 80,
+        "level": "Beginner",
+        "icon": "🔥",
+        "videoUrl": "https://www.youtube.com/watch?v=qULTwquOuT4"
+    },
+    {
+        "title": "Advanced Strength Training",
+        "trainer": "Mark Strong",
+        "duration": 50,
+        "calories": 400,
+        "level": "Advanced",
+        "icon": "💪",
+        "videoUrl": "https://www.youtube.com/watch?v=2pLT-olgUJs"
+    },
+    {
+        "title": "Beginner Fat Burn",
+        "trainer": "Nina Patel",
+        "duration": 20,
+        "calories": 180,
+        "level": "Beginner",
+        "icon": "🚶",
+        "videoUrl": "https://www.youtube.com/watch?v=IT94xC35u6k"
+    },
+    {
+        "title": "Dance Fitness Blast",
+        "trainer": "Carlos Vega",
+        "duration": 30,
+        "calories": 270,
+        "level": "Intermediate",
+        "icon": "🎯",
+        "videoUrl": "https://www.youtube.com/watch?v=ZWk19OVon2k"
+    }
+]

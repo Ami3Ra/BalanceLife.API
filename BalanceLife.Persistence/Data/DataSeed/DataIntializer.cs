@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using BalanceLife.Domain.Contracts;
 using BalanceLife.Domain.Entities;
 using BalanceLife.Domain.Entities.MealModule;
+using BalanceLife.Domain.Entities.SportModule;
 using BalanceLife.Persistence.Data.DbContexts;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,8 +27,11 @@ namespace BalanceLife.Persistence.Data.DataSed
             {
                 var hasMeals = await _dbContext.Meals.AnyAsync();
                 var hasRestaurants = await _dbContext.Restaurants.AnyAsync();
+                var hasWorkouts = await _dbContext.Workouts.AnyAsync();
+                var hasVideos = await _dbContext.WorkoutVideos.AnyAsync();
+                var hasBreathing = await _dbContext.BreathingExercises.AnyAsync();
 
-                if (hasMeals && hasRestaurants)
+                if (hasMeals && hasRestaurants && hasWorkouts && hasVideos && hasBreathing)
                     return;
 
                 if (!hasMeals)
@@ -39,6 +43,22 @@ namespace BalanceLife.Persistence.Data.DataSed
                 {
                   await  SeedDataFromJson<Restaurant, int>("restaurants.json", _dbContext.Restaurants);
                 }
+
+                if (!hasWorkouts)
+                {
+                    await SeedDataFromJson<Workout, int>("workouts.json", _dbContext.Workouts);
+                }
+
+                if (!hasVideos)
+                {
+                    await SeedDataFromJson<WorkoutVideo, int>("workout-videos.json", _dbContext.WorkoutVideos);
+                }
+
+                if (!hasBreathing)
+                {
+                    await SeedDataFromJson<BreathingExercise, int>("breathing-exercises.json", _dbContext.BreathingExercises);
+                }
+
                 await _dbContext.SaveChangesAsync();
             }
             catch (Exception ex)
@@ -69,6 +89,7 @@ namespace BalanceLife.Persistence.Data.DataSed
                 {
                     await dbset.AddRangeAsync(data);
                 }
+
             }
             catch (Exception ex)
             {
