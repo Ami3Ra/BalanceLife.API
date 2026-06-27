@@ -98,5 +98,19 @@ namespace BalanceLife.Presentation.Controllers
 
             return Ok(result);
         }
+
+
+
+        [HttpGet("recommended")]
+        [Authorize]
+        public async Task<IActionResult> Recommended()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var result =
+                await _workoutService.GetRecommendedWorkoutAsync(userId);
+
+            return Ok(result);
+        }
     }
 }

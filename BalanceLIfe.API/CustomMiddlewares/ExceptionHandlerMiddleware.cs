@@ -51,6 +51,9 @@ namespace BalanceLIfe.API.CustomMiddlewares
                     Status = ex switch
                     {
                         NotFoundException => StatusCodes.Status404NotFound,
+
+                        UnauthorizedAccessException => StatusCodes.Status403Forbidden,
+
                         _ => StatusCodes.Status500InternalServerError,
                     },
                 };

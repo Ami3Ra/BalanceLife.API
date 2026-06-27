@@ -52,6 +52,12 @@ namespace BalanceLIfe.API
             builder.Services.AddScoped<ICaffeineService, CaffeineService>();
             builder.Services.AddScoped<IWorkoutVideoService, WorkoutVideoService>();
             builder.Services.AddScoped<IBreathingExerciseService, BreathingExerciseService>();
+            builder.Services.AddScoped<IDashboardService, DashboardService>();
+            builder.Services.AddScoped<IMealTrackingService, MealTrackingService>();
+            builder.Services.AddScoped<IUserGoalsService, UserGoalsService>();
+            builder.Services.AddScoped<IOnboardingService, OnboardingService>();
+            builder.Services.AddScoped<IAICoachService,AICoachService>();
+            builder.Services.AddHttpClient();
             //builder.Services.AddTransient<MealPictureUrlResolver>();
             //builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
             //{

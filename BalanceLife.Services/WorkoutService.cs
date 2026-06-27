@@ -8,16 +8,20 @@ using BalanceLife.Domain.Entities.SportModule;
 using BalanceLife.Services.Abstraction;
 using BalanceLife.Services.Specifications.SportSpecifications;
 using BalanceLife.Shared.DTOs.SportDTOs;
+using BalanceLife.Domain.Entities.OnboardingModule;
+using BalanceLife.Services.Specifications.OnboardingSpecifications;
 
 namespace BalanceLife.Services
 {
     public class WorkoutService : IWorkoutService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IUserGoalsService _userGoalsService;
 
-        public WorkoutService(IUnitOfWork unitOfWork)
+        public WorkoutService(IUnitOfWork unitOfWork, IUserGoalsService userGoalsService)
         {
             _unitOfWork = unitOfWork;
+            _userGoalsService = userGoalsService;
         }
 
         public async Task<List<WorkoutDTO>> GetAllAsync(string? category, string? level)
@@ -225,6 +229,65 @@ namespace BalanceLife.Services
                 TotalCalories = todaySessions.Sum(s => s.CaloriesBurned)
             };
         }
+
+
+        public async Task<RecommendedWorkoutDto> GetRecommendedWorkoutAsync(string userId)
+        {
+            var repo = _unitOfWork.GetRepository<UserProfile, int>();
+
+            var spec = new UserProfileSpecification(userId);
+
+            var profile = await repo.GetByIdAsync(spec);
+
+            if (profile == null)
+                throw new Exception("User profile not found");
+
+            if (profile.Goal.Equals("Gain Muscle", StringComparison.OrdinalIgnoreCase))
+            {
+                return new RecommendedWorkoutDto
+                {
+                    CurrentGoal = profile.Goal,
+                    WorkoutType = "Mixed Cardio & Strength",
+                    Duration = 30,
+                    ExpectedBurn = 200,
+                    Tip = "Balance cardio and strength training for overall wellness."
+                };
+            }
+
+            if (profile.Goal.Equals("Lose Weight", StringComparison.OrdinalIgnoreCase))
+            {
+                return new RecommendedWorkoutDto
+                {
+                    CurrentGoal = profile.Goal,
+                    WorkoutType = "Cardio",
+                    Duration = 45,
+                    ExpectedBurn = 400,
+                    Tip = "Focus on cardio to burn more calories."
+                };
+            }
+
+            if (profile.Goal.Equals("Maintain Weight", StringComparison.OrdinalIgnoreCase))
+            {
+                return new RecommendedWorkoutDto
+                {
+                    CurrentGoal = profile.Goal,
+                    WorkoutType = "Mixed Training",
+                    Duration = 30,
+                    ExpectedBurn = 250,
+                    Tip = "Balance strength and cardio to maintain your fitness."
+                };
+            }
+
+            return new RecommendedWorkoutDto
+            {
+                CurrentGoal = profile.Goal,
+                WorkoutType = "General Fitness",
+                Duration = 30,
+                ExpectedBurn = 200,
+                Tip = "Stay active every day."
+            };
+        }
+
     }
 
 }

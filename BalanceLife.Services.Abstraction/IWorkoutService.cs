@@ -19,5 +19,7 @@ namespace BalanceLife.Services.Abstraction
         // 🔹 Analytics
         Task<List<WorkoutHistoryDto>> GetHistoryAsync(string userId);
         Task<TodayWorkoutSummaryDto> GetTodaySummaryAsync(string userId);
+
+        Task<RecommendedWorkoutDto> GetRecommendedWorkoutAsync(string userId);
     }
 }

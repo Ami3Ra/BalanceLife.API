@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BalanceLife.Domain.Contracts;
 using BalanceLife.Domain.Entities.WaterModule;
 using BalanceLife.Services.Abstraction;
+using BalanceLife.Services.Exceptions;
 using BalanceLife.Services.Specifications;
 using BalanceLife.Services.Specifications.WaterSpecifications;
 using BalanceLife.Shared.DTOs.WaterDTOs;
@@ -227,9 +228,27 @@ namespace BalanceLife.Services
 
             return waters.Select(w => new WaterTimelineDto
             {
+                Id = w.Id,
                 Time = w.CreatedAt.ToLocalTime().ToString("hh:mm tt"),
                 AmountInMl = w.AmountInMl
             }).ToList();
+        }
+
+        public async Task DeleteWaterAsync(int waterId, string userId)
+        {
+            var repo = _unitOfWork.GetRepository<WaterIntake, int>();
+
+            var water = await repo.GetByIdAsync(waterId);
+
+            if (water == null)
+                throw new WaterNotFoundException(waterId);
+
+            if (water.UserId != userId)
+                throw new UnauthorizedAccessException("You can't delete this record.");
+
+            repo.Delete(water);
+
+            await _unitOfWork.SaveChangesAsync();
         }
     }
 }

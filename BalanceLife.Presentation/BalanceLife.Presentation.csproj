@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BalanceLife.Services.Abstraction\BalanceLife.Services.Abstraction.csproj" />
+    <ProjectReference Include="..\BalanceLife.Shared\BalanceLife.Shared.csproj" />
   </ItemGroup>
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />

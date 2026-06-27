@@ -4,7 +4,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using BalanceLife.Domain.Entities.DashboardModule;
 using BalanceLife.Domain.Entities.MealModule;
+using BalanceLife.Domain.Entities.OnboardingModule;
 using BalanceLife.Domain.Entities.SportModule;
 using BalanceLife.Domain.Entities.WaterModule;
 using Microsoft.EntityFrameworkCore;
@@ -31,6 +33,8 @@ namespace BalanceLife.Persistence.Data.DbContexts
         public DbSet<ActivitySession> ActivitySessions { get; set; }
         public DbSet<WorkoutVideo> WorkoutVideos { get; set; }
         public DbSet<BreathingExercise> BreathingExercises { get; set; }
-
+        public DbSet<MealLog> MealLogs { get; set; }
+        public DbSet<UserGoals> UserGoals { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
     }
 }

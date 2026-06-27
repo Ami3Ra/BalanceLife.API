@@ -75,5 +75,16 @@ namespace BalanceLife.Presentation.Controllers
 
             return Ok(result);
         }
+
+        [HttpDelete("{id}")]
+        [Authorize]
+        public async Task<IActionResult> DeleteWater(int id)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            await _waterService.DeleteWaterAsync(id, userId);
+
+            return Ok("Water deleted successfully.");
+        }
     }
 }

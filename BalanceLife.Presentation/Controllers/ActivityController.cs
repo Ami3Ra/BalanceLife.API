@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using BalanceLife.Domain.Contracts;
@@ -24,7 +25,7 @@ namespace BalanceLife.Presentation.Controllers
         [Authorize]
         public async Task<IActionResult> Start(StartActivityDto dto)
         {
-            var userId = "test-user";
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var id = await _activityService.StartAsync(userId, dto.ActivityType);
 
@@ -35,7 +36,7 @@ namespace BalanceLife.Presentation.Controllers
         [Authorize]
         public async Task<IActionResult> End(EndActivityDto dto)
         {
-            var userId = "test-user";
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var result = await _activityService.EndAsync(userId, dto.SessionId);
 
@@ -46,7 +47,7 @@ namespace BalanceLife.Presentation.Controllers
         [Authorize]
         public async Task<IActionResult> Active()
         {
-            var userId = "test-user";
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var session = await _activityService.GetActiveAsync(userId);
 
@@ -61,7 +62,7 @@ namespace BalanceLife.Presentation.Controllers
         [Authorize]
         public async Task<IActionResult> History()
         {
-            var userId = "test-user";
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var result = await _activityService.GetHistoryAsync(userId);
 
@@ -72,7 +73,7 @@ namespace BalanceLife.Presentation.Controllers
         [Authorize]
         public async Task<IActionResult> WeeklySummary()
         {
-            var userId = "test-user";
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             var result = await _activityService.GetWeeklySummaryAsync(userId);
 

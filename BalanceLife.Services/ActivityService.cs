@@ -138,7 +138,7 @@ namespace BalanceLife.Services
                 TotalWorkouts = weekSessions.Count,
                 TotalDuration = weekSessions.Sum(s =>
                     Math.Max(1, (int)Math.Round(
-                        (s.EndTime.Value - s.StartTime).TotalMinutes))),
+                        (s.EndTime!.Value - s.StartTime).TotalMinutes))),
                 TotalCalories = weekSessions.Sum(s => (int)s.CaloriesBurned)
             };
         }

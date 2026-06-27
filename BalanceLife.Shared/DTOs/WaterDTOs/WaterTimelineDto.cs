@@ -8,7 +8,10 @@ namespace BalanceLife.Shared.DTOs.WaterDTOs
 {
     public class WaterTimelineDto
     {
+        public int Id { get; set; }
+
         public string Time { get; set; } = default!;
+
         public int AmountInMl { get; set; }
     }
 }

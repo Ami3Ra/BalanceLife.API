@@ -13,4 +13,10 @@ namespace BalanceLife.Services.Exceptions
 
     public sealed class MealNotFoundException(int id)
         : NotFoundException($"Meal with Id: {id} is Not Found") { }
+
+
+    public sealed class WaterNotFoundException(int id)
+    : NotFoundException($"Water record with Id: {id} was not found.")
+    {
+    }
 }

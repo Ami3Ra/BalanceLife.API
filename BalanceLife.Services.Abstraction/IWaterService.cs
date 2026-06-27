@@ -14,5 +14,6 @@ namespace BalanceLife.Services.Abstraction
         Task<WaterStreakDto> GetStreakAsync(string userId);
         Task<WeeklyWaterDto> GetWeeklyWaterAsync(string userId);
         Task<List<WaterTimelineDto>> GetTodayTimelineAsync(string userId);
+        Task DeleteWaterAsync(int waterId, string userId);
     }
 }
