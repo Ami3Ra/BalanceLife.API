@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 using BalanceLife.Domain.Contracts;
 using BalanceLife.Domain.Entities;
 using BalanceLife.Domain.Entities.MealModule;
@@ -80,10 +82,14 @@ namespace BalanceLife.Persistence.Data.DataSed
             {
                 using var dataStream = File.OpenRead(filePath);
 
-                var data = await JsonSerializer.DeserializeAsync<List<T>>(dataStream, new JsonSerializerOptions
+                var options = new JsonSerializerOptions
                 {
                     PropertyNameCaseInsensitive = true
-                });
+                };
+
+                options.Converters.Add(new JsonStringEnumConverter());
+
+                var data = await JsonSerializer.DeserializeAsync<List<T>>(dataStream, options);
 
                 if (data is not null && data.Any())
                 {
